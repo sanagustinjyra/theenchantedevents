@@ -371,7 +371,7 @@ footer {
 /*end of footer css*/
 
 /*mobile*/
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 480px) {
 /*  .container {
     margin:0;
   }*/
