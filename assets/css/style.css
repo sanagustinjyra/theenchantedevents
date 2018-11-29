@@ -1,0 +1,543 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/*--BACK TO TOP--*/
+
+.back-to-top {
+  display: inline-block;
+  margin-bottom: 18px;
+  text-decoration: underline;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: gray;
+  position: fixed;
+  bottom: -150px;
+  right: 18px;
+  transition: bottom 2s;
+  cursor: pointer;
+
+}
+.back-to-top:before {
+  content: " ";
+  display: block;
+  width: 42%;
+  padding: 21% 0;
+  border: solid #FFF;
+  border-width: 0 2px 2px 0;
+  transform: rotate(225deg);
+  margin-left: 26%;
+  margin-top: 35%;
+  position: absolute;
+  z-index: 20;
+}
+
+.navbar {
+  overflow: hidden;
+  padding: 2px; 
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99; 
+  background-color: #141414;
+}
+
+/*navbar links */
+.navbar li {
+  color: #f2f2f2;
+  padding: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.navbar a:hover {
+  color:grey;
+}
+
+#brandicon{
+  width:30px;
+  height: 50px;
+  margin-left: 30px;
+}
+
+
+.jumbotron {
+  height: 100vh;
+/*  background-image: url("../img/logo2.png");*/
+  background-color: #141414;
+  border-radius: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+/*  opacity: 0.5;*/
+}
+
+/*for landing page*/
+
+.jumbotron img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-top: 12%;
+}
+
+.jumbotron .btn{
+/*  border: 2px solid #d4af37; */
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+/*  margin: 4px 2px;*/
+  opacity: 0.6;
+  transition: 0.3s;
+  margin-left: 43%;
+  margin-top: -10%;
+}
+
+.btn:hover {opacity: 1}
+} 
+
+/*end of landing page css*/
+
+
+h1{
+  color: #d4af37;
+  margin-top: 7%;
+  margin-left: 5px;
+  padding: 5px;
+  font-size: 30px;
+  text-transform: uppercase;
+/*  text-shadow: 2px 3px #141414;*/
+}
+
+
+/*home*/
+
+.carousel-image {
+  height: 70vh;
+}
+
+.display-4 {
+  font-family: 'Tangerine', cursive;
+  padding: 30px;
+  text-align: center;
+  text-shadow: 2px 3px #141414;
+}
+
+.home-tags p{
+  color: #c79563;
+}
+
+#home-contact {
+/*  background-image: url('../img/i1.jpg');*/
+  background-color: #f2f2f2;
+  width: 100%;
+}
+.btn-gallery {
+  margin-left: 41.8%;
+  margin-bottom: 10px;
+}
+.home-btn{
+/*  border: 2px solid #d4af37; */
+  color: white;
+/*  padding: 16px 32px;*/
+  text-align: center;
+  font-size: 16px;
+/*  margin: 4px 2px;*/
+  opacity: 0.6;
+  transition: 0.3s;
+  margin-left: 45%;
+  margin-top: -2%;
+}
+
+/*end of home*/
+
+
+
+
+/*about*/
+
+#abt{
+  margin-top: 90px;
+  color: #d4af37;
+}
+
+.img-right {
+  float: right;
+  width: 70%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.about-tags p, h4{
+  color: #c79563;
+}
+
+#location {
+  height: 100%;
+  background-image: url('../img/i6.jpg');
+  color: #f2f2f2;
+/*  background-color: #c79563;*/
+  text-shadow: 1px 1px #141414;
+}
+#location h4 {
+  color: #f2f2f2;
+}
+.text-justify {
+  margin-left: 10px;
+}
+
+#team {
+  background-color: #f2f2f2;
+}
+
+.card-img-top {
+  margin-top: 20px;
+  height: 600px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-img {
+  /*margin-top: 20px;*/
+  height: 250px;
+  /*width: 500px;*/
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/*gallery*/
+.thumbnail {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  margin-left: -10%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.thumbnail1 {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  margin-left: -3%;
+  padding-left: 0;
+  padding-right: 0;
+}
+#gallery{
+  transition: all 0.5s ease;
+  width: 500px;
+  height: 300px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: -20%;
+  margin-right: 0;
+}
+#gallery:hover {
+  transform: scale(1.4);
+}
+
+#gallery1{
+  transition: all 0.5s ease;
+  width: 300px;
+  height: 300px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#gallery1:hover {
+  transform: scale(1.4);
+}
+
+#gal{
+  margin-top: 90px;
+  color: #d4af37;
+}
+
+
+
+/*venues*/
+#vns{
+  margin-top: 30px;
+  color: #d4af37;
+}
+
+#venues {
+  height: 100%;
+  background-color: #f1f1f1;
+  color: #c79563;
+  text-shadow: 2px 3px #f2f2f2;
+  border-radius: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 5%;
+  font-size: 20px;
+}
+
+
+#venues h4, h3{
+  margin-top: 20px;
+  color: #c79563;
+  text-shadow: 2px 3px #f2f2f2;
+  text-transform: uppercase;
+  font-size: 30px;
+
+}
+#venues h5 {
+  color: #c79563;
+}
+#venues p {
+  font-size: 15px;
+}
+#vns-btn{
+      margin-left: 4%;
+   }
+.img-left {
+  float: left;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#hall {
+  margin-top: 5%;
+}
+
+th, tr {
+  font-size: 15px;
+}
+#hall li {
+  color: #c79563;
+  text-shadow: 2px 3px #f2f2f2;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+/*contact*/
+#ctc{
+  margin-top: 30px;
+  color: #d4af37;
+}
+
+#contact {
+  height: 100%;
+  background-color: #f1f1f1;
+  color: #c79563;
+  text-shadow: 2px 3px #f2f2f2;
+  border-radius: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 5%;
+  font-size: 20px;
+}
+
+
+#contact h4, h3{
+  margin-top: 20px;
+  color: #c79563;
+  text-shadow: 2px 3px #f2f2f2;
+  text-transform: uppercase;
+  font-size: 30px;
+
+}
+#contact p {
+  font-size: 15px;
+}
+#contact .btn {
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+
+footer {
+  background-color: #141414; 
+}
+.cols {
+  margin-top: 10px;
+  text-align: center;
+  color: #f2f2f2;
+
+}
+/*end of footer css*/
+
+/*mobile*/
+@media only screen and (max-width: 400px) {
+/*  .container {
+    margin:0;
+  }*/
+
+  .back-to-top {
+    width: 30px;
+    height: 30px;
+  }
+
+  .jumbotron img{
+      margin-top: 55%;
+  }
+
+  .jumbotron .btn{
+    margin-left: 30%;
+    margin-top: -10%;
+  }
+  #caption {
+    /*margin-top: 50%;*/
+    text-align: center;
+    font-size: 40px;
+  }
+  .carousel-img {
+    height: 30vh;
+  }
+
+  .btn-gallery, .home-btn{
+    margin-left: 80px;
+  }
+
+  .col-img{
+    margin-left: 20px;
+  }
+
+ 
+  .carousel-image {
+    height: 50vh;
+
+  }
+
+
+  .card-img-top {
+    height: 250px;
+    width: 330px; 
+    margin-top: -30px;
+    margin-bottom: 30px;
+  }
+
+  .card-img{
+    height: 250px;
+    width: 330px; 
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  #venues, #contact {
+    margin-top: 50px;
+  }
+
+  #caption {
+    margin-top: 50px;
+  }
+
+  .thumbnail{
+    width: 330px;
+    height: 300px;
+    overflow: hidden;
+    margin-left: -2.5%;
+    padding-left: 0;
+    padding-right: -10px;
+  }
+
+  .thumbnail1{
+    width: 330px;
+    height: 300px;
+    overflow: hidden;
+    margin-left: -3%;
+    padding-left: 0;
+    padding-right: -10px;
+  }
+
+  #gallery {
+    width: 400px;
+    margin: 6px 20px;
+  }
+
+   #gallery1 {
+    width: 400px;
+    margin-left: -25%; 
+    padding-left: 0;
+
+  }
+
+   #vns-btn{
+      margin-left: 4%;
+   }
+
+}
+
+
+/*Tablets*/
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  
+  .jumbotron img{
+      margin-top: 30%;
+  }
+
+  .jumbotron .btn{
+    margin-left: 40%;
+    margin-top: -9%;
+  }
+
+  .carousel-image {
+    height: 50vh;
+  }
+
+ .thumbnail{
+    width: 350px;
+    height: 300px;
+    overflow: hidden;
+    margin-left: -10%;
+    padding-left: 0;
+    padding-right: -10px;
+  }
+
+  .thumbnail1{
+    width: 350px;
+    height: 300px;
+    overflow: hidden;
+    margin-left: -2.5%;
+    padding-left: 0;
+    padding-right: -10px;
+  }
+
+  .card-img-top {
+    /*align-content: center;*/
+    height: 250px;
+    width: 700px; 
+    margin-top: -20px;
+    margin-bottom: 20px;
+  }
+
+  .card-img{
+    /*align-content: center;*/
+    height: 250px;
+    width: 350px; 
+    margin-top: -10px;
+    margin-bottom: 20px;
+  }
+
+  #gallery {
+    width: 400px;
+    margin: 6px 20px;
+  }
+
+   #gallery1 {
+    width: 400px;
+    margin: 6px 20px;
+  }
+   #vns-btn{
+      margin-left: 5%;
+   }
+/*
+  #col-img {
+    height: 200px;
+    width: 300px;
+  }*/
+}
+
